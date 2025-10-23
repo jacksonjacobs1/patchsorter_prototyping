@@ -1785,6 +1785,7 @@ dependencies = [
     { name = "numpy", version = "2.0.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version != '3.10.*'" },
     { name = "numpy", version = "2.2.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.10.*'" },
     { name = "pandas" },
+    { name = "tiledb" },
 ]
 
 [package.metadata]
@@ -1795,6 +1796,7 @@ requires-dist = [
     { name = "matplotlib", specifier = ">=3.9.4" },
     { name = "numpy", specifier = ">=2.0.2" },
     { name = "pandas", specifier = ">=2.3.2" },
+    { name = "tiledb", specifier = ">=0.35.1" },
 ]
 
 [[package]]
@@ -2276,6 +2278,44 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/28/e3/55dcc2cfbc3ca9c29519eb6884dd1415ecb53b0e934862d3559ddcb7e20b/stack_data-0.6.3.tar.gz", hash = "sha256:836a778de4fec4dcd1dcd89ed8abff8a221f58308462e1c4aa2a3cf30148f0b9", size = 44707 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/f1/7b/ce1eafaf1a76852e2ec9b22edecf1daa58175c090266e9f6c64afcd81d91/stack_data-0.6.3-py3-none-any.whl", hash = "sha256:d5558e0c25a4cb0853cddad3d77da9891a08cb85dd9f9f91b9f8cd66e511e695", size = 24521 },
+]
+
+[[package]]
+name = "tiledb"
+version = "0.35.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy", version = "2.0.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version != '3.10.*'" },
+    { name = "numpy", version = "2.2.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.10.*'" },
+    { name = "packaging" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/b6/d2/d7bcd60f7a52ab055d48fd283e9097e5c654a4cd686f31034554dc836d0e/tiledb-0.35.1.tar.gz", hash = "sha256:9cfab14f2a4c4d6aa58abe484ff55703172c1d51b1b89a7e59a6d07aaf4cdfd0", size = 386928 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/4d/de/430b22915c054600607ecb10104d777e31e219e67d84954c698ba27ee95c/tiledb-0.35.1-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:96d67f56e77ffd8946798fad6fdff036372f2c333ece3941fa8821221e0666e4", size = 11988865 },
+    { url = "https://files.pythonhosted.org/packages/c2/84/41e995071e8a46c3b46fab72591166290831dfb48f08d70e3bedeb2d68c8/tiledb-0.35.1-cp310-cp310-macosx_11_0_x86_64.whl", hash = "sha256:41f2dcd9dd2b3a640526d9f50140f368a5b5c45b96b47c1fb68072f5598fcfa7", size = 13548454 },
+    { url = "https://files.pythonhosted.org/packages/8f/2f/e15105d964c98a704c661368ede121a7dcd526460d5e9b2345519c536ca0/tiledb-0.35.1-cp310-cp310-manylinux_2_28_aarch64.whl", hash = "sha256:05dc31e950370a179b96323591da1cbb16954eba2c78a4c15ff711d86e2ec37e", size = 16404582 },
+    { url = "https://files.pythonhosted.org/packages/cc/17/065b0362c669e5115ae0c9bf0c4eb7573062eae431191385a74a32b47199/tiledb-0.35.1-cp310-cp310-manylinux_2_28_x86_64.whl", hash = "sha256:9c35648aaa7f9bca3d6390c3bcba5cd742cdaf91140f1a656781652b20482022", size = 17810244 },
+    { url = "https://files.pythonhosted.org/packages/13/a9/048b784423e1236dde0a6958bbd313b5955cfaeab2a9fef4ce98969f6af8/tiledb-0.35.1-cp310-cp310-win_amd64.whl", hash = "sha256:4415f436ff45d0810fbd2a1fac28bdf86b8f64d5257a4848823c28bdd3a1579f", size = 7493775 },
+    { url = "https://files.pythonhosted.org/packages/ae/b1/cf65b6c4801b2777f361a2e815dae20d3cd51871a4d7180cb51af29cbf41/tiledb-0.35.1-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:a18a24e5f5b247be1aec63c9fc0fde8dd320d6356749936aea94a2545a23204d", size = 11992522 },
+    { url = "https://files.pythonhosted.org/packages/12/61/33ae9502ae83bb8de5fbe52fd21041138744bd8b62bbcd3d277c3ed7d890/tiledb-0.35.1-cp311-cp311-macosx_11_0_x86_64.whl", hash = "sha256:73882a5ad3988fb8bf5392504675c46bf0997178b253326864c973308dc07283", size = 13551832 },
+    { url = "https://files.pythonhosted.org/packages/5c/a7/6953f0eadc6551f27712b5fa542711ae21bf7cf8f6d1c5c487803f62ea01/tiledb-0.35.1-cp311-cp311-manylinux_2_28_aarch64.whl", hash = "sha256:e6443ec07bf342e3d20191fc5e550f5f5d5c3901c7504bfa4eda738bd35444a6", size = 16405668 },
+    { url = "https://files.pythonhosted.org/packages/20/b8/273abdb1db58b8df08e1b5bc109e24b5ec22b888733b4e7f638e36417e32/tiledb-0.35.1-cp311-cp311-manylinux_2_28_x86_64.whl", hash = "sha256:1601d5e1f36c8619df1fa850a72173a75419693fe196a443f86a5b0b181751a5", size = 17811671 },
+    { url = "https://files.pythonhosted.org/packages/10/97/14cb9126158c33ffd37cd155cd2776aa5a564c0aa12fc0303dc6e699af27/tiledb-0.35.1-cp311-cp311-win_amd64.whl", hash = "sha256:2494baa328318e488eef85fe42c919ba8218aca9ae85883b90359f34e43931ba", size = 7494584 },
+    { url = "https://files.pythonhosted.org/packages/1a/3d/a0dc2e5413ffc7eeb6cb43e5cf2f8eccb47a6463f790a4f9dea08a3c843d/tiledb-0.35.1-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:6f54d6fc83901bc1f975fa6d3b49b1bec801499d6c2fe41df6c23e6d6c80653d", size = 11997027 },
+    { url = "https://files.pythonhosted.org/packages/05/8d/b36c5654529a8138fccf5d5b827638127edf86cc7ab40e57e849ecd7dbb8/tiledb-0.35.1-cp312-cp312-macosx_11_0_x86_64.whl", hash = "sha256:d5652fd55927c618e27ea853d53121c002c6e25da8f56e65c54862c3a6495f84", size = 13567208 },
+    { url = "https://files.pythonhosted.org/packages/5a/6b/960363dceefdfab8680a85c6a1bc02c1593b00daafcb4f29563a9f195309/tiledb-0.35.1-cp312-cp312-manylinux_2_28_aarch64.whl", hash = "sha256:cdb7d4c5f4b2c65caa120087d2338334b6ae79cfad0b91557bb0eb9a0f73861c", size = 16409724 },
+    { url = "https://files.pythonhosted.org/packages/a5/a5/9583757cca4c6638f25c3f759f3c35da9405b38e97dc65c0872c35e07b09/tiledb-0.35.1-cp312-cp312-manylinux_2_28_x86_64.whl", hash = "sha256:5bb73cc25e8d5bac8c53dbd4ee11d2c5b6c1b3ab232a14de7a5652ab09e0eef6", size = 17822224 },
+    { url = "https://files.pythonhosted.org/packages/7f/5b/32430b6e1d4e92ccbd2eafeded1cbc824e197aa7d78edb884b2aebcf9c73/tiledb-0.35.1-cp312-cp312-win_amd64.whl", hash = "sha256:8c9ba0b2c89f1eafda51c4fb428f0cc32b4d3cbb5d399e293493bb21e49eddc1", size = 7503709 },
+    { url = "https://files.pythonhosted.org/packages/2c/f3/0b83fb0b17dd934aa81860811905561d86e32bbc74e5d881eaf344a8660a/tiledb-0.35.1-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:24e8ccb8f0df3954a9f486e15755ae8f81e69a42512d06d9f8c9e9b8f7c4aa3c", size = 11996869 },
+    { url = "https://files.pythonhosted.org/packages/8a/56/4188203bf5d2996c7f8e392dd505707d494dbb5b0d9fcb65ed453865d9d4/tiledb-0.35.1-cp313-cp313-macosx_11_0_x86_64.whl", hash = "sha256:b73eb7ec16464f9f627fdac6acbcef6db81801313b683fe58c23c1e65966a52e", size = 13567348 },
+    { url = "https://files.pythonhosted.org/packages/5d/5e/652683e1355e68b4b375d0d8f3e42fd156e28471f5bf2f26e8ca2e49372b/tiledb-0.35.1-cp313-cp313-manylinux_2_28_aarch64.whl", hash = "sha256:bd7395fee7843bc7d8712ddc7c1baa51074a1f6a6704469c8454998c3b1c0d8e", size = 16408936 },
+    { url = "https://files.pythonhosted.org/packages/79/23/df4c9fb40c40d611536606552d0a22e49f73425b439d502f0a97be04e445/tiledb-0.35.1-cp313-cp313-manylinux_2_28_x86_64.whl", hash = "sha256:18b0bbf8069693663f2ee4fec75255a19348bfbfd33abd64ff16a04436c1d9b3", size = 17822035 },
+    { url = "https://files.pythonhosted.org/packages/b8/0d/ccfc6da18b2b3b490b6045036d94b6ce131fc8c890d4e3e624538355b832/tiledb-0.35.1-cp313-cp313-win_amd64.whl", hash = "sha256:1e2e6701319e8024e1aebc5f38ee8c6bdcfd57216917b278b0a381454946d4f8", size = 7503668 },
+    { url = "https://files.pythonhosted.org/packages/22/64/bf10bef26d04782d8f193dd504151441e97a19fa87312dec1ad7ca41d749/tiledb-0.35.1-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:b24d40045ee4e7d63da5b02c0ae6d9ce2a2713ea4a01b76009d6efc6a470448d", size = 11988900 },
+    { url = "https://files.pythonhosted.org/packages/e6/84/9761cdb94b2d77434f81798ad658aed509e29604fbff02d5e9591628fb6f/tiledb-0.35.1-cp39-cp39-macosx_11_0_x86_64.whl", hash = "sha256:7e03078429e857ff06f2dd09eb91a0c9b44cac3712626375e88224a53a09047b", size = 13548530 },
+    { url = "https://files.pythonhosted.org/packages/29/6d/dd012272d7722880f249ac0fba0f33e761c4fd0e5c8e0442f44ab36082e4/tiledb-0.35.1-cp39-cp39-manylinux_2_28_aarch64.whl", hash = "sha256:2eb89a6f20ab998477c87e6f687b61189de7ee4b2d8e0466ca367400ea65fe54", size = 16405253 },
+    { url = "https://files.pythonhosted.org/packages/a6/2a/9b05913f4aa091853cacff8f24ae87233c6dd613eb0dfc1b02634e30b410/tiledb-0.35.1-cp39-cp39-manylinux_2_28_x86_64.whl", hash = "sha256:2c87d62550bcbf05725b9d5b8367253f91988530cd4e1aee382646d519d1efc3", size = 17811957 },
+    { url = "https://files.pythonhosted.org/packages/e6/1e/1359deb020db402dde94412c0343a9c6c8a8dbff888cf07987137927704f/tiledb-0.35.1-cp39-cp39-win_amd64.whl", hash = "sha256:161ebcfab2ebf2b0b4d0e63a830a8ff88525981e75bf88e5fc87b5b1dc91fe4f", size = 7547979 },
 ]
 
 [[package]]
